@@ -1,22 +1,82 @@
+/* Corpo e fundo */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #2b2d42;
+    color: #edf2f4;
     margin: 0;
-    padding: 20px;
-    background-color: #f9f9f9;
+    padding: 0;
+    line-height: 1.6;
 }
+
+/* Cabeçalho principal */
 h1 {
     text-align: center;
-    color: #333;
+    color: #ef233c;
+    margin: 20px 0;
+    font-size: 2.5em;
 }
+
+/* Container central */
 .container {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
+    padding: 20px;
 }
+
+/* Estilo dos blocos de trabalho */
 .work {
-    background: #fff;
-    border: 1px solid #ddd;
-    padding: 15px;
+    background: #3a3f58;
+    border: 1px solid #4c5670;
+    padding: 20px;
     margin: 15px 0;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.work:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Títulos dos projetos */
+.work h2 {
+    color: #8d99ae;
+    margin: 0 0 10px 0;
+    font-size: 1.8em;
+}
+
+/* Descrição dos projetos */
+.work p {
+    color: #d6d6d6;
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+/* Links */
+.work a {
+    color: #ef233c;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.work a:hover {
+    color: #d90429;
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .work {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .work h2 {
+        font-size: 1.5em;
+    }
 }
