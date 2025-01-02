@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ "/assets/style.css" | relative_url }}">
+</head>
+<body>
+    <header>
+        <h1><a href="/">{{ site.title }}</a></h1>
+        <nav>
+            <ul>
+                <li><a href="/apresentacao/">Apresentação</a></li>
+                <li><a href="/curriculo/">Currículo</a></li>
+                <li><a href="/outros/">Outros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {{ content }}
+    </main>
+
+    <footer>
+        <p>Desenvolvido por {{ site.author }}</p>
+    </footer>
+</body>
+</html>
