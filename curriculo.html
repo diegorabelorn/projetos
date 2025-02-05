@@ -21,6 +21,23 @@
             padding: 20px;
             height: 100vh;
             box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+            position: fixed; /* Mantém a barra fixa */
+            top: 0;
+            left: 0;
+            overflow-y: auto; /* Adiciona rolagem caso necessário */
+        }
+
+        .main-content {
+            margin-left: 300px; /* Para não sobrepor a sidebar */
+            padding: 20px;
+            flex: 1;
+            overflow-y: auto; /* Permite rolagem do conteúdo */
+            max-height: 100vh; /* Garante que o conteúdo role dentro da tela */
+        }
+
+        .curriculum {
+            max-width: 800px;
+            margin: auto;
         }
 
         .sidebar img {
